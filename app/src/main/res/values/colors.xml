@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbar">#21282d</color>
+    <color name="tab_layout">#21282d</color>
+    <color name="text_tab_layout_on">#19caff</color>
+    <color name="text_tab_layout_off">#1394bc</color>
+    <color name="background">#1e2024</color>
+    <color name="item_dark">#21282d</color>
+    <color name="item_medium">#232d33</color>
+    <color name="item_light">#2d3a41</color>
+    <color name="header">#37414a</color>
+    <color name="header_text">#19caff</color>
+    <color name="header_text2">#1394bc</color>
+    <color name="line">#515f6d</color>
+    <color name="text_1">#ffff</color>
+    <color name="text_2">#70aac9</color>
+    <color name="text_3">#788fa2</color>
+
+    <color name="negative">#e44b45</color>
+    <color name="positive">#57b732</color>
+
+</resources>

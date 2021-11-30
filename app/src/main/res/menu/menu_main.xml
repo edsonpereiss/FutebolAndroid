@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_today"
+        android:actionLayout="@layout/badge_layout"
+        android:icon="@drawable/ic_calendar"
+        android:showAsAction="always"
+        android:title="Calendario"
+        appcompat:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_escolher_favorito"
+        android:icon="@drawable/ic_add"
+        appcompat:showAsAction="always"
+        android:title="Escolher Favorito" />
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="Atualizar"
+        android:icon="@drawable/ic_menu_refresh"
+        appcompat:showAsAction="always" />
+
+
+</menu>

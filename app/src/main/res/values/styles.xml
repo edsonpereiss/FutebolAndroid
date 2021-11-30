@@ -1,0 +1,99 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/toolbar</item> 
+        <item name="colorPrimaryDark">@color/background</item> 
+        <item name="colorControlHighlight">@color/item_dark</item> 
+        <item name="colorAccent">@color/item_light</item>
+        <item name="android:windowAnimationStyle">@null</item>
+
+
+    </style>
+
+    <style name="RadioButton.Purple" parent="Widget.AppCompat.CompoundButton.RadioButton">
+
+        <item name="colorControlActivated">@color/header_text</item>
+        <item name="colorControlNormal">@android:color/white</item>
+
+    </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18dp</item>
+        <!-- include other attributes you want to change: textColor, textStyle, etc -->
+    </style>
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="DrawerStyle" parent="BaseTheme">
+        <item name="android:color">@color/item_dark</item> 
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display4</item>
+
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+
+        <item name="android:textSize">10sp</item><!-- text size in menu-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.Design.Snackbar.Message</item>
+
+    </style>
+
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="TitleWithShadow">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#cc000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80FFFFFF</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+    <style name="RippleStyleBlack" parent="RippleStyleWhite">
+        <item name="mrl_rippleColor">#8096989A</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/text_tab_layout_on</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/text_tab_layout_on</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_tab_layout_off</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display4</item>
+    </style>
+
+    <style name="DialogFavorite" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

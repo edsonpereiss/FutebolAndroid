@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+def AAVersion = '4.4.0'
+
+buildscript {
+    repositories {
+        mavenCentral()
+
+    }
+
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    }
+}
+
+
+android {
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "sportsmobile.futebolandroid"
+        useLibrary  'org.apache.http.legacy'
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //Android Annotations
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
+    implementation 'com.android.support:support-annotations:24.1.1'
+
+    //Jackson
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.5.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.5.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+
+    //RxJava
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'net.jokubasdargis.rxbus:rxbus:1.2.0'
+
+    //HttpLogInterceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    // Android Framework
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:multidex:1.0.1'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:10.2.1'
+    implementation 'com.google.firebase:firebase-ads:10.2.1'
+    implementation 'com.firebase:firebase-client-android:2.3.1'
+    implementation 'com.google.firebase:firebase-config:10.2.1'
+    implementation 'com.google.firebase:firebase-messaging:10.2.1'
+    implementation 'com.google.firebase:firebase-crash:10.2.1'
+    implementation 'com.google.firebase:firebase-analytics:10.2.1'
+    implementation 'com.google.firebase:firebase-storage:10.2.1'
+
+    //Google Services
+    implementation 'com.google.code.gson:gson:2.7'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.alorma:timelineview:2.3.0'
+    implementation 'com.joanzapata.iconify:android-iconify-fontawesome:2.1.+'
+    implementation 'com.heinrichreimersoftware:material-intro:1.6.2'
+
+
+}

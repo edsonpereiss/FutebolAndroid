@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_rodada"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/lay_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_dark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="false"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/item_medium"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="1dp"
+                                android:paddingRight="1dp"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Maracanã"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                    android:textColor="@color/text_2"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/line"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/item_dark"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/stadium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Maracanã"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                    android:textColor="@color/header_text"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/formatted_utc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="2016-11-15 17:00:00"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                    android:textColor="@color/header_text"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/localteam_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:elevation="3dp"
+                                                android:text="1"
+                                                android:textAllCaps="true"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                android:textColor="@color/header_text"
+                                                android:textIsSelectable="false"
+                                                android:textSize="30dp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:elevation="3dp"
+                                                android:text="-"
+                                                android:textAllCaps="true"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                android:textColor="@color/header_text"
+                                                android:textIsSelectable="false"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/visitorteam_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:elevation="3dp"
+                                                android:text="1"
+                                                android:textAllCaps="true"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                android:textColor="@color/header_text"
+                                                android:textIsSelectable="false"
+                                                android:textSize="30dp"
+                                                android:textStyle="bold" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal"
+                                                android:visibility="gone">
+
+                                                <TextView
+                                                    android:id="@+id/status"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="corinthians"
+                                                    android:textAllCaps="true"
+                                                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                    android:textColor="@color/text_1"
+                                                    android:textSize="6dp"
+                                                    android:textStyle="bold"
+                                                    android:visibility="visible" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:gravity="left">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:id="@+id/img_localteam"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/ic_escudo_default_g" />
+
+                                            <TextView
+                                                android:id="@+id/localteam_name"
+                                                android:layout_width="80dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:autoText="false"
+                                                android:gravity="center"
+                                                android:text="são paulo lala lalala"
+                                                android:textAllCaps="true"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                android:textColor="@color/text_1"
+                                                android:textSize="10dp"
+                                                android:textStyle="bold"
+                                                android:visibility="visible" />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:gravity="right">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/visitorteam_name"
+                                                android:layout_width="80dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                android:text="corinthians"
+                                                android:textAllCaps="true"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                                                android:textColor="@color/text_1"
+                                                android:textSize="10dp"
+                                                android:textStyle="bold"
+                                                android:visibility="visible" />
+
+                                            <ImageView
+                                                android:id="@+id/img_visitorteam"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/ic_escudo_default_g" />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/txtGame"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_status"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

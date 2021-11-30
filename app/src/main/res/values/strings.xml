@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FutebolAndroid</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="txt_round">Round</string>
+
+    <string name="position_g">Goalkeeper</string>
+    <string name="position_cdl">Defender</string>
+    <string name="position_cdr">Defender</string>
+    <string name="position_dm">Defensive Midfielder</string>
+    <string name="position_lb">Left Back</string>
+    <string name="position_rb">Right Back</string>
+    <string name="position_cml">Midfielder</string>
+    <string name="position_cmr">Midfielder</string>
+    <string name="position_lm">Foward</string>
+    <string name="position_rm">Midfielder</string>
+    <string name="position_f">Foward</string>
+
+</resources>

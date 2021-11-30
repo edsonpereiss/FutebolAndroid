@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/header"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10sp"
+                android:maxLines="2"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#737373"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="22sp"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="J"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="V"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="E"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="GP"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="GP"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:text="SG"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="@color/header_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_standings"
+            android:layout_width="match_parent"
+            android:divider="@color/background"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
